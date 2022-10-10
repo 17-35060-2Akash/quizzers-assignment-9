@@ -15,7 +15,7 @@ const Header = () => {
     return (
         <div className=''>
             {['lg'].map((expand) => (
-                <Navbar key={expand} bg="light" expand={expand} className="mb-3">
+                <Navbar key={expand} bg="light" expand={expand} className="">
                     <Container fluid className='mx-3'>
 
                         <Navbar.Brand>
