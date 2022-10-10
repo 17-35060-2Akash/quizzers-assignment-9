@@ -8,7 +8,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { Link } from 'react-router-dom';
 import './Header.css';
-import logo from '../../images/logo3.png';
+import logo from '../../images/logo2.png';
 
 const Header = () => {
     return (
@@ -16,8 +16,10 @@ const Header = () => {
             {['lg'].map((expand) => (
                 <Navbar key={expand} bg="light" expand={expand} className="mb-3">
                     <Container fluid>
-                        <img className='logo-img me-4' src={logo} alt="" />
-                        <Navbar.Brand href="#">Company Name</Navbar.Brand>
+
+                        <Navbar.Brand href="#">
+                            <img className='logo-img img-fluid' src={logo} alt="" />
+                        </Navbar.Brand>
                         <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
                         <Navbar.Offcanvas
                             id={`offcanvasNavbar-expand-${expand}`}
