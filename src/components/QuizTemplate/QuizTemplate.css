@@ -1,4 +1,13 @@
-/* .quiz-template-container {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-} */
+.btn-submit {
+    border: 2px solid #ff1f59;
+    padding: 10px 80px;
+    padding-bottom: 20px;
+    color: #ff1f59;
+}
+
+.btn-submit:hover {
+    background-color: #ff1f59;
+    color: aliceblue;
+    /* font-weight: bold; */
+
+}
