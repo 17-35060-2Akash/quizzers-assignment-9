@@ -5,9 +5,10 @@ import Col from 'react-bootstrap/Col';
 import { Button } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 
 const Topic = ({ topic }) => {
-    const { logo, name, total } = topic;
+    const { id, logo, name, total } = topic;
     return (
         <Col>
             <Card className='border-0 topic-cards mb-3'>
@@ -18,10 +19,12 @@ const Topic = ({ topic }) => {
                         Questions: <span className='text-primary'>{total}</span>
                     </Card.Text>
                 </Card.Body>
-                <Button variant="outline-primary" className='m-3 mt-1 py-2 fw-semibold d-flex justify-content-center align-items-center'>
-                    Start Quiz
-                    <FontAwesomeIcon icon={faArrowRight} className='ms-2'></FontAwesomeIcon>
-                </Button>
+                <Link to={`/quiztemplate/${id}`} className='link-start-quiz'>
+                    <Button variant="outline-primary" className='m-3 mt-1 py-2 fw-semibold d-flex justify-content-center align-items-center btn-start-quiz'>
+                        Start Quiz
+                        <FontAwesomeIcon icon={faArrowRight} className='ms-2'></FontAwesomeIcon>
+                    </Button>
+                </Link>
             </Card>
         </Col>
     );

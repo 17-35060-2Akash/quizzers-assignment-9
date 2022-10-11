@@ -11,3 +11,14 @@
     transform: scale(1.07);
     transition: transform 2s ease;
 }
+
+.link-start-quiz {
+    text-decoration: none;
+    display: flex;
+
+
+}
+
+.btn-start-quiz {
+    flex-grow: 1;
+}
