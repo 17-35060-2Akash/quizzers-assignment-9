@@ -1,9 +1,10 @@
-import React from 'react';
 import { Col, Form } from 'react-bootstrap';
 import './Option.css';
 
-const Option = ({ option }) => {
-    console.log(option);
+
+const Option = ({ option, handleEvaluation, correctAnswer }) => {
+
+    // console.log(selectedOption);
     return (
         <Col>
             <div className='border border-2 rounded-3 mx-auto pt-2 option'>
@@ -13,11 +14,13 @@ const Option = ({ option }) => {
                             type={type}
                             name="group1"
                             id={`default-${type}`}
+                            value={option}
                             label={option}
+                            // onChange={e => setSelectedOption(e.target.value)}
+                            onChange={(e) => handleEvaluation(e, correctAnswer)}
                         />
                     </div>
                 ))}
-
             </div>
         </Col>
     );

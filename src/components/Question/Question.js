@@ -9,17 +9,16 @@ import { Form, Row } from 'react-bootstrap';
 
 
 
-const Question = ({ question, idx }) => {
+
+const Question = ({ question, idx, handleEvaluation }) => {
     const [open, setOpen] = useState(false);
 
-    // console.log(question.question);
     let ques = question.question;
     ques = ques.replace('<p>', '');
     ques = ques.replace('</p>', '');
 
     const options = question.options;
     const correctAnswer = question.correctAnswer;
-    // console.log(options);
 
 
     return (
@@ -45,7 +44,9 @@ const Question = ({ question, idx }) => {
                             {
                                 options.map((option, idx) => <Option
                                     key={idx}
-                                    option={option}></Option>)
+                                    option={option}
+                                    handleEvaluation={handleEvaluation}
+                                    correctAnswer={correctAnswer}></Option>)
                             }
                         </Row>
                     </Form>
