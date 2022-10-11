@@ -1,0 +1,11 @@
+.footer-container {
+    height: 100px;
+    background-color: #ff1f59;
+    border: 0;
+}
+
+.footer-container-opened {
+    height: 100px;
+    background-color: #2041fefc;
+    /* background-color: #2041fefc; */
+}

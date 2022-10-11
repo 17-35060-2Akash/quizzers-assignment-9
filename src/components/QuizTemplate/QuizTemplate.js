@@ -6,7 +6,7 @@ import './QuizTemplate.css';
 const QuizTemplate = () => {
     const quiz = useLoaderData().data;
     const questions = quiz.questions;
-    // console.log(quiz);
+    console.log(quiz);
     return (
         <div className='quiz-template-container'>
             <h1 className='display-5 pt-5 pb-2'>Quiz on {quiz.name}</h1>

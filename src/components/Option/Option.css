@@ -1,0 +1,10 @@
+.option {
+    background-color: #e7e8e8;
+
+}
+
+.option:hover {
+    background-color: #2fa29d;
+    color: wheat;
+    font-weight: 500;
+}
