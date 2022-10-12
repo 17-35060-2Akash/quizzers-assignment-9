@@ -11,3 +11,13 @@
     /* font-weight: bold; */
 
 }
+
+.quiz-templeate-title {
+    color: #ff1f59;
+    font-weight: normal;
+}
+
+.total-question-title {
+    color: #2040fe;
+    font-weight: normal;
+}

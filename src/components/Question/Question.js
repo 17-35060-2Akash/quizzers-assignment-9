@@ -25,7 +25,7 @@ const Question = ({ question, idx, handleEvaluation }) => {
         <div className='py-3'>
             <Card className="text-center">
                 <Card.Header className='pb-5' style={{ backgroundColor: '#ff1f59' }}>
-                    <div className='fs-3 py-2 mt-2 me-2 d-flex align-items-center justify-content-end'>
+                    <div className='fs-3 py-2 mt-2 me-2 d-flex align-items-center justify-content-end' title='Click here to check the right answer.'>
                         {
                             open ?
                                 <FontAwesomeIcon onClick={() => setOpen(!open)} icon={faEye}></FontAwesomeIcon>

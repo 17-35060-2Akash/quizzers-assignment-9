@@ -1,0 +1,36 @@
+.picture-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+    margin: 0 auto;
+    margin: 60px 0px;
+    /* margin-left: 30px; */
+
+
+}
+
+.container-left {
+    display: grid;
+    gap: 20px;
+}
+
+.container-right {
+    padding-top: 50px;
+    width: 80%;
+}
+
+.features-list {
+    color: #ff1f59;
+
+}
+
+.assesment-title {
+    margin-bottom: 50px;
+    /* padding-right: 50px; */
+}
+
+.icon-check {
+    background-color: #fbbc04;
+    font-size: 27px;
+    padding: 2px;
+}

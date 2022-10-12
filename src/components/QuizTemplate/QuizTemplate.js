@@ -40,8 +40,8 @@ const QuizTemplate = () => {
 
     return (
         <div className='quiz-template-container'>
-            <h1 className='display-5 pt-5 pb-2'>Quiz on {quiz.name}</h1>
-            <p className='fs-3 pb-5'>Questions: {questions.length}</p>
+            <h1 className='display-5 pt-5 pb-2 quiz-templeate-title'>Quiz on {quiz.name}</h1>
+            <p className='fs-3 pb-5 total-question-title'>Questions: <span className='fs-2 fw-semibold'>{questions.length}</span></p>
             <div className="questions-container container">
                 {
                     questions.map((question, idx) => <Question
@@ -65,7 +65,7 @@ const QuizTemplate = () => {
                 pauseOnHover></ToastContainer>
 
             <div className='py-5'>
-                <button onClick={() => evaluate()} className='btn rounded-4 btn-submit'><span className='fs-2 '>Submit</span></button>
+                <button onClick={() => evaluate()} className='btn rounded-3 btn-submit'><span className='fs-2 '>Submit</span></button>
             </div>
         </div>
     );
