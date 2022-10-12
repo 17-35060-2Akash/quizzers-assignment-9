@@ -5,6 +5,8 @@ import './QuizTemplate.css';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Swal from "sweetalert2";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPaperclip } from '@fortawesome/free-solid-svg-icons';
 
 
 const QuizTemplate = () => {
@@ -65,7 +67,7 @@ const QuizTemplate = () => {
                 pauseOnHover></ToastContainer>
 
             <div className='py-5'>
-                <button onClick={() => evaluate()} className='btn rounded-3 btn-submit'><span className='fs-2 '>Submit</span></button>
+                <button onClick={() => evaluate()} className='btn rounded-3 btn-submit pt-3'><span className='fs-2 fw-semibold'>Submit<FontAwesomeIcon icon={faPaperclip}></FontAwesomeIcon></span></button>
             </div>
         </div>
     );
