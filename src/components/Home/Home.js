@@ -35,8 +35,8 @@ const Home = () => {
                         />
 
                         <Carousel.Caption>
-                            <h3 className='display-5'>Quizes By Expert Instructors</h3>
-                            <p className='fs-5'>For professional development, career benefits. Examine yourself with daily updates questionnaire. </p>
+                            <h3 className='display-5'>Quizes By Experts</h3>
+                            <p className='fs-5'>Examine yourself with daily updates questionnaire. </p>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
@@ -53,8 +53,8 @@ const Home = () => {
                     </Carousel.Item>
                 </Carousel>
             </div>
-            <h2 className='py-5 mt-4 display-4'>Complete these {topics.length} <br />Quiz Challanges of today</h2>
-            <Row xs={1} sm={1} md={2} lg={4} className='topics-container g-4 px-5 py-4 pb-5 mb-5'>
+            <h2 className='py-5 mt-4 display-4 home-title'>Complete these {topics.length} <br />Quiz Challanges of today</h2>
+            <Row xs={1} sm={1} md={2} lg={4} className='topics-container g-4 px-5 py-4 pb-5 mb-5 '>
                 {
                     topics.map(topic => <Topic
                         key={topic.id}

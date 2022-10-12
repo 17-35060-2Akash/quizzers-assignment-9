@@ -14,13 +14,13 @@ const Topic = ({ topic }) => {
             <Card className='topic-cards mb-3'>
                 <Card.Img variant="top" src={logo} style={{ backgroundColor: '#baffff' }} />
                 <Card.Body className='d-flex flex-column justify-content-center align-items-start mt-2'>
-                    <Card.Title className='text-primary fw-bold'>{name}</Card.Title>
-                    <Card.Text className='fw-semibold text-dark'>
+                    <Card.Title className='text-primary fw-bold fs-3'>{name}</Card.Title>
+                    <Card.Text className='fw-semibold text-dark fs-6'>
                         Questions: <span className='text-primary'>{total}</span>
                     </Card.Text>
                 </Card.Body>
                 <Link to={`/quiztemplate/${id}`} className='link-start-quiz'>
-                    <Button variant="" className='m-3 mt-1 py-2 fw-semibold d-flex justify-content-center align-items-center btn-start-quiz'>
+                    <Button variant="" className='m-3 mt-1 py-3 mb-4 fw-semibold d-flex justify-content-center align-items-center btn-start-quiz'>
                         Start Quiz
                         <FontAwesomeIcon icon={faArrowRight} className='ms-2'></FontAwesomeIcon>
                     </Button>

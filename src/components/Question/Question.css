@@ -1,11 +1,19 @@
 .footer-container {
-    height: 100px;
+    height: 130px;
     background-color: #ff1f59;
     border: 0;
 }
 
 .footer-container-opened {
-    height: 100px;
+    height: 130px;
     background-color: #2041fefc;
     /* background-color: #2041fefc; */
 }
+
+/* @media screen and (max-width:700px) {
+    .correct-answer-text {}
+}
+
+@media screen and (min-width: 701px) and (max-width: 1000px) {
+    .correct-answer-text {}
+} */

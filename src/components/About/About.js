@@ -17,12 +17,12 @@ const About = () => {
                 </div>
                 <div className='container-right'>
                     <img src={img3} alt="" className='img-fluid' />
-                    <div>
+                    <div className='logo-image-about'>
                         <img src={logoimg} alt="" className='img-fluid' />
                     </div>
                 </div>
                 <div className='pt-5'>
-                    <p className='display-5 mx-4 text-end mt-5'>See why administrators love  <span className='quiz-templeate-title display-3'>Quizzers</span> Logo  for their teachers and students.</p>
+                    <p className='display-5 mx-4 text-end mt-5 see-why-text'>See why administrators love  <span className='quiz-templeate-title display-3'>Quizzers</span> Logo  for their teachers and students.</p>
                 </div>
                 <div className='pt-5'>
                     <p className='display-5 text-warning fw-semibold assesment-title mt-5'>Why do professionals <br /> trust us?</p>

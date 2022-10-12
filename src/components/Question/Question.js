@@ -55,7 +55,7 @@ const Question = ({ question, idx, handleEvaluation }) => {
                 <Card.Footer className={`${open ? 'footer-container-opened' : 'footer-container'}`}>
                     {
                         open ?
-                            <p className='text-white fs-2 fw-lighter pt-2 '>Correct Answer: {correctAnswer}</p>
+                            <p className='text-white fs-2 fw-lighter pt-2 correct-answer-text'>Correct Answer: {correctAnswer}</p>
                             :
                             <p></p>
                     }

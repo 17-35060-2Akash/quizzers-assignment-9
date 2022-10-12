@@ -1,5 +1,9 @@
-.statistics {}
+.statistics {
+    width: 500px;
+    height: 500px;
+}
 
-.barchart-container {
-    margin: 100px auto;
+.statistics-container {
+    width: 100%;
+    height: 100%;
 }
