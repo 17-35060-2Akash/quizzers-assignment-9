@@ -4,8 +4,8 @@ Quizzers, an website for quiz assesments.
 ## netlify Live link: 
 https://majestic-longma-a7207a.netlify.app/
 
-## Private Repository Link: 
-https://github.com/programming-hero-web-course2/b6-quiz-crackerz-17-35060-2Akash
+## Public Repository Link: 
+https://github.com/17-35060-2Akash/quizzers-assignment-9
 
 ## Description:
 Here is an website named Quizzers which is an react application for quiz assesments.
